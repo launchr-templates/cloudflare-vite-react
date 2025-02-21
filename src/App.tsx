@@ -1,10 +1,11 @@
-// import { useState } from 'react'
+import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import { Button } from './components/ui/button'
 
 function App() {
-    // const [count, setCount] = useState(0)
-    // const [name, setName] = useState('Unknown')
+    const [count, setCount] = useState(0)
+    const [name, setName] = useState('Unknown')
 
     return (
         <div className="min-h-screen bg-[#242424] flex items-center justify-center">
@@ -31,11 +32,8 @@ function App() {
                         Vite + React + Cloudflare + TailwindCSS
                     </h1>
 
-                    {/* <div className="mt-4">
-                        <Button
-                            onClick={() => setCount(count => count + 1)}
-                            variant="outline"
-                        >
+                    <div className="mt-4">
+                        <Button onClick={() => setCount(count => count + 1)}>
                             count is {count}
                         </Button>
                         <p className="mt-4 text-white/70">
@@ -56,7 +54,6 @@ function App() {
                                     )
                                     .then(data => setName(data.name))
                             }}
-                            variant="outline"
                         >
                             Name from API is: {name}
                         </Button>
@@ -68,7 +65,7 @@ function App() {
 
                     <p className="text-[#888] mt-8">
                         Click on the Vite and React logos to learn more
-                    </p> */}
+                    </p>
                 </div>
             </div>
         </div>
