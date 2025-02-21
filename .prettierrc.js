@@ -23,6 +23,8 @@ const importOrder = {
 }
 
 export default {
+    plugins: ['@ianvs/prettier-plugin-sort-imports'],
+
     trailingComma: 'all',
     singleQuote: true,
     printWidth: 80,
