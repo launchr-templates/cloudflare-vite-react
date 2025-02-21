@@ -1,50 +1,42 @@
-# React + TypeScript + Vite
+# Cloudflare + Vite + React + TypeScript
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a modern web application template that combines the power of Cloudflare Workers with Vite's lightning-fast development experience. Built with TypeScript and React, it provides a robust foundation for building performant web applications.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Vite](https://vitejs.dev/) - Next Generation Frontend Tooling
+- [React 19](https://react.dev/) - A JavaScript library for building user interfaces
+- [TypeScript](https://www.typescriptlang.org/) - JavaScript with syntax for types
+- [Cloudflare Workers](https://workers.cloudflare.com/) - Serverless execution environment
+- [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework
 
-## Expanding the ESLint configuration
+## Development Tools
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- [ESLint](https://eslint.org/) - For code linting
+- [Prettier](https://prettier.io/) - For code formatting
+- [Husky](https://typicode.github.io/husky/) - For Git hooks
+- [Wrangler](https://developers.cloudflare.com/workers/wrangler/) - CLI tool for Cloudflare Workers
 
-- Configure the top-level `parserOptions` property like this:
+## Getting Started
 
-```js
-export default tseslint.config({
-    languageOptions: {
-        // other options...
-        parserOptions: {
-            project: ['./tsconfig.node.json', './tsconfig.app.json'],
-            tsconfigRootDir: import.meta.dirname,
-        },
-    },
-})
-```
+1. Clone this repository
+2. Install dependencies:
+    ```bash
+    npm install
+    ```
+3. Start the development server:
+    ```bash
+    npm run dev
+    ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## Available Scripts
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+- `npm run dev` - Start development server with HMR
+- `npm run build` - Build for production
+- `npm run preview` - Preview production build locally
+- `npm run lint` - Run ESLint
+- `npm run format` - Format code with Prettier
 
-export default tseslint.config({
-    // Set the react version
-    settings: { react: { version: '18.3' } },
-    plugins: {
-        // Add the react plugin
-        react,
-    },
-    rules: {
-        // other rules...
-        // Enable its recommended rules
-        ...react.configs.recommended.rules,
-        ...react.configs['jsx-runtime'].rules,
-    },
-})
-```
+## Deployment
+
+This project is configured to deploy to Cloudflare Workers. Make sure you have your Cloudflare account set up and wrangler configured before deploying.
