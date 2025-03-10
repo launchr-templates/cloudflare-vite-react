@@ -10,24 +10,17 @@ This is a modern web application template that combines the power of Cloudflare 
 - [Cloudflare Workers](https://workers.cloudflare.com/) - Serverless execution environment
 - [Tailwind CSS](https://tailwindcss.com/) - A utility-first CSS framework
 
-## Development Tools
-
-- [ESLint](https://eslint.org/) - For code linting
-- [Prettier](https://prettier.io/) - For code formatting
-- [Husky](https://typicode.github.io/husky/) - For Git hooks
-- [Wrangler](https://developers.cloudflare.com/workers/wrangler/) - CLI tool for Cloudflare Workers
-
 ## Getting Started
 
 1. Clone this repository
 2. Install dependencies:
-    ```bash
-    npm install
-    ```
+   ```bash
+   npm install
+   ```
 3. Start the development server:
-    ```bash
-    npm run dev
-    ```
+   ```bash
+   npm run dev
+   ```
 
 ## Available Scripts
 
